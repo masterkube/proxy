@@ -20,10 +20,6 @@
     "heroku"
   ],
   "main": "./lib/cors-anywhere.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-  },
   "files": [
     "lib/",
     "test/",
@@ -48,6 +44,7 @@
     "lint": "eslint .",
     "test": "mocha ./test/test*.js --reporter spec",
     "test-coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/test.js test/test-ratelimit.js --reporter spec"
+    "start": "node server.js",
   },
   "engines": {
     "node": ">=0.10.0"
