@@ -1,7 +1,12 @@
-if no proy url =>  everything  
-if wrong user => show nothing
-if correct user => user rbac rules in proxy
+**Dev Documentation**
+This proxy sample proy.com/<your-request-address.com>
 
+#Dev Effort
+1. added field in http request header for the username
+2. proxy which has defined rules in it looks up for the username and approves/denies the request based on username
+3. if no username/admin username approve all request.
+4. if wrong username / username entered does not exists deny request
+5. if correct username do the rbac and approve/deny request
 
 [![Build Status](https://travis-ci.com/Rob--W/cors-anywhere.svg?branch=master)](https://travis-ci.com/Rob--W/cors-anywhere)
 [![Coverage Status](https://coveralls.io/repos/github/Rob--W/cors-anywhere/badge.svg?branch=master)](https://coveralls.io/github/Rob--W/cors-anywhere?branch=master)
